@@ -1,5 +1,8 @@
 import "./App.css";
+import { useState } from "react";
+import ButtonState from "./Components/buttonState/ButtonState";
 import FilterableProductTable from "./Components/filterableProducts/FilterableProductTable";
+import MyApp from "./Components/MyApp";
 
 const PRODUCTS = [
   { category: "Fruits", price: "$1", stocked: true, name: "Apple" },
@@ -13,7 +16,7 @@ const PRODUCTS = [
 function App() {
   return (
     <div>
-      <FilterableProductTable />
+      <MyApp products={PRODUCTS}/>
     </div>
   );
 }

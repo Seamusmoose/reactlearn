@@ -1,7 +1,10 @@
-export default function ProductCategoryRow() {
+export default function ProductCategoryRow({category}) {
+
   return (
-    <div>
-      <h1>Row titles</h1>
-    </div>
+    <tr>
+    <th colSpan="2">
+      {category}
+    </th>
+  </tr>
   );
 }

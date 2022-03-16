@@ -1,8 +1,12 @@
-export default function SearchBar() {
-    return (
-        <div>
-            <input id="tableSearch" type="search" placeholder="Search..."></input>
-            <input id="stockCheckBox" type="checkbox"> Only show products in stock</input>
-        </div>
-    )
-};
+export default function SearchBar({ products }) {
+  return (
+    <div>
+      <form>
+        <input type="text" placeholder="Search..." />
+        <label>
+          <input type="checkbox" /> Only show products in stock
+        </label>
+      </form>
+    </div>
+  );
+}
